@@ -37,6 +37,7 @@ a {
 }
 
 /* Header */
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -108,4 +109,62 @@ a {
   border: 1px solid black;
   background-color: black;
   color: white;
+}
+
+/* About */
+
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.favorites {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.favorite {
+  width: 200px;
+  height: 200px;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  position: relative;
+  background-color: white;
+}
+
+.favorite:hover .hover-info {
+  opacity: 1;
+}
+
+.hover-info {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: white;
+  transition: all 0.2s linear;
+}
+
+.favorite i {
+  font-size: 48px;
+}
+
+.favorite-things__name {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.favorite-things__detail {
+  font-size: 14px;
 }

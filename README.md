@@ -2,8 +2,8 @@
 
 ## Contents
 
-- [] Header
-- [] Home
+- [O] Header
+- [O] Home
 - [] About me
 - [] My work
 - [] Contact
@@ -15,3 +15,4 @@
     - [] scroll to top button
     - [] AboutMe 에 image slider 사용
     - [] Home 화면에서 스크롤 시 background에 zoom effect
+    - [] Home 화면에서 스크롤 시 background 점차 흐려짐
