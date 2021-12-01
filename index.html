@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/9cd36ea70d.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="components/header.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -35,15 +36,18 @@
         <h2 class="home-title--small">Hi, my name is,</h2>
         <h1 class="home-title--big">HyeongSeop Lee</div></h1>
         <h3 class="home-title--middle"
-          >A FrontEnd Developer curnetly residing in Seoul, Korea.</h3
+          >A FrontEnd Developer curretly residing in Seoul, Korea.</h3
         >
       <button class="home__contact-btn">CONTACT ME</button>
     </section>
 
     <!-- About -->
 <section id="about" class="section">
-    <h1 class="section-title">About me</h1>
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi distinctio in cum sequi, repellat tempora, nisi dolores molestiae ad repellendus nihil veniam ducimus. Iure nisi quaerat quidem molestiae excepturi!</h3>
+  <div class="about__text">
+     <h1 class="section__title">About me</h1>
+    <h3 class="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi distinctio in cum sequi, repellat tempora, nisi dolores molestiae ad repellendus nihil veniam ducimus. Iure nisi quaerat quidem molestiae excepturi!</h3>
+  </div>
+   
 
     <div class="favorites">
         <div class="favorite">
@@ -75,7 +79,7 @@
 
     <!-- My work -->
 <section class="myWork section">
-    <h1 class="section-title">My Work</h1>
+    <h1 class="section__title">My Work</h1>
     <h3>Projects</h3>
     <div class="work-wrapper">
         <div class="category-btns">
@@ -99,24 +103,67 @@
     
 </section>
 
-    <!-- Contact -->
-    
-    <section class="contact section">
-        <h1 class="section-title" >Get in Touch</h1>
-        <p>Although I’m currently looking for new opportunities, always open to reply.</br>Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-        <a href="#" target="blank" class="email-link">Contact
-        </a>
-    </section>
+<!-- Experience -->
 
-        <!-- Footer -->
-    <footer class="footer">
-<a href="#" target="blank" class="reference">
-<span>Designed & Built by HyeongSeop Lee</span>
-</a>
-<div class="links">
-    <a href="https://github.com/devVenny" target="blank" class="contact__link"><i class="fab fa-github-square"></i></a>
-<a href="https://www.instagram.com/ven_eeee/?hl=ko" target="blank" class="contact__link"><i class="fab fa-instagram-square"></i></a>
-</div>
+<section id="experiece" class="section">
+  <section class="exp__column--left">
+    <h1 class="section__title exp__title">Experience</h1>
+
+    <div class="exp__description">
+      <div class="exp__description--travel">
+        <div class="exp__theme">Working Hoiday & Backpacker</div>
+        <div class="exp__metainfo">I've lived in Australia for 2 years and traveled around over 12 countries.
+        </br>I just saw very small part of the whole new world but I've experienced a lot and met good people with great energy.
+        </br>Ever since i came back from the journey, i realize that there are so many ways to live while loving myself.
+        </div>
+      </div>
+      <div class="exp__description--book hidden">
+        <div class="exp__theme">Book club & Transcription</div>
+        <div class="exp__metainfo">I've lived in Australia for 2 years and travel around over 12 countries by myself.
+        </br>I saw a piece of the whole new world facing many opportunity and good people.
+        </br>And i realized there are so many ways in life.
+        </div>
+      </div>
+      <div class="controller">
+        <span class="controller-btn prev"><i class="fas fa-chevron-left"></i></span>
+        <span class="controller-btn next"><i class="fas fa-chevron-right"></i></span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="exp__column--right">
+      <div class="exp__images exp__images--travel">
+        <div class="exp__image image--travel"><img src="" alt=""></div>
+        <div class="exp__image image--travel"><img src="" alt=""></div>
+        <div class="exp__image image--travel"><img src="" alt=""></div>
+      </div>
+      <div class="exp__images exp__images--book hide">
+        <div class="exp__image image--book"><img src="" alt=""></div>
+        <div class="exp__image image--book"><img src="" alt=""></div>
+        <div class="exp__image image--book"><img src="" alt=""></div>
+      </div>
+  </section>
+</section>
+
+<!-- Contact -->
+
+<section class="contact section">
+    <h1 class="section-title" >Get in Touch</h1>
+    <p>Although I’m currently looking for new opportunities, always open to reply.</br>Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+    <a href="#" target="blank" class="email-link">Contact
+    </a>
+  </section>
+
+<!-- Footer -->
+<footer class="footer">
+    <a href="#" target="blank" class="reference">
+      <span>Designed & Built by HyeongSeop Lee</span>
+    </a>
+    <div class="links">
+        <a href="https://github.com/devVenny" target="blank" class="contact__link"><i class="fab fa-github-square"></i></a>
+      <a href="https://www.instagram.com/ven_eeee/?hl=ko" target="blank" class="contact__link"><i class="fab fa-instagram-square"></i></a>
+    </div>
 </footer>
   </body>
 </html>
