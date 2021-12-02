@@ -31,3 +31,9 @@ function handleHeaderH() {
     topButton.classList.add("hidden");
   }
 }
+
+topButton.addEventListener("click", goToTop);
+
+function goToTop() {
+  window.scrollTo(0, 0);
+}

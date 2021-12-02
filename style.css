@@ -544,16 +544,17 @@ body {
   margin-bottom: 5px;
 }
 
-/* Top button */
+/* Footer */
+/* // Top button */
 
 .top-button {
   width: 14px;
   height: 25px;
   position: absolute;
-  left: -50px;
+  left: -48px;
   font-size: 24px;
   cursor: pointer;
-  color: var(--emerald-color);
+  color: var(--normal-grey);
   padding: 4px;
   display: flex;
   flex-direction: column;
@@ -564,7 +565,7 @@ body {
 }
 
 .fa-angle-double-up {
-  animation: moveChevron 2.2s ease-in-out infinite;
+  animation: moveChevron 1.5s linear infinite;
 }
 
 @keyframes moveChevron {
