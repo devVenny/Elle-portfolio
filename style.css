@@ -493,7 +493,7 @@ body {
 .email-link {
   display: inline-block;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   padding: 20px 28px;
   border: var(--border);
   border-radius: 4px;
@@ -542,4 +542,40 @@ body {
 
 .contact__link:first-child {
   margin-bottom: 5px;
+}
+
+/* Top button */
+
+.top-button {
+  width: 14px;
+  height: 25px;
+  position: absolute;
+  left: -50px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--emerald-color);
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  overflow: hidden;
+  transform: rotate(270deg);
+  transition: all 1s linear;
+}
+
+.fa-angle-double-up {
+  animation: moveChevron 2.2s ease-in-out infinite;
+}
+
+@keyframes moveChevron {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+.top-button.hidden {
+  display: none;
 }
