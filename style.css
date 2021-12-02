@@ -124,6 +124,8 @@ body {
   justify-content: center;
   align-items: flex-start;
   margin-top: 30px;
+  position: relative;
+  top: 0;
 }
 
 .home--avatar-wrapper {
@@ -513,8 +515,9 @@ body {
   font-size: 14px;
   color: var(--light-grey);
   position: fixed;
-  bottom: 18%;
+  top: -150px;
   right: -100px;
+  /* -100px */
   transform: rotate(450deg);
 }
 
@@ -575,8 +578,4 @@ body {
   to {
     transform: translateY(-60px);
   }
-}
-
-.top-button.hidden {
-  display: none;
 }
