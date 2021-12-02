@@ -456,6 +456,22 @@ body {
 .exp__image {
   background-color: gainsboro;
   border-radius: 2px;
+  position: relative;
+}
+
+.exp__image-hover {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.exp__image:hover .exp__image-hover {
+  opacity: 1;
 }
 
 .exp__image:nth-child(2) {

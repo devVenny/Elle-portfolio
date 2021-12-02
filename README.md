@@ -21,3 +21,5 @@
 - [] work buttons focus 된 효과 남기기
 - [] work button에 의해 선택된 category의 work만 보여주기
 - [] category 버튼에 알람숫자 toggle
+- [] Experience에서 설명 + 사진 부분 slide
+- [] experience 사진 hover 시 blur -> 선명 효과
