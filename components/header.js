@@ -35,5 +35,5 @@ function handleHeaderH() {
 topButton.addEventListener("click", goToTop);
 
 function goToTop() {
-  window.scrollTo(0, 0);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
