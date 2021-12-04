@@ -21,7 +21,7 @@
 #### Scroll
 
 - [O] 스크롤 시 header style 변경
-- [] 스크롤 시 화면 스크롤 보다 늦게 홈 화면이 스크롤
+- [O] 스크롤 시 home화면 왼쪽으로 이동
 - [] Home 화면에서 스크롤 시 background 점차 흐려짐
 - [O] scroll to top button
 - [] Header의 nav 클릭 시 해당 화면으로 이동
