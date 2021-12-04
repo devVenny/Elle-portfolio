@@ -69,24 +69,46 @@ navMenu.forEach((item) => {
     ).offsetTop; // 해당 section의 top 높이
 
     window.scrollTo({ top: `${sectionTop}`, behavior: "smooth" });
-    // if (
-    //   itemName ===
-    //   document.querySelector(`section[data-sectionName="${itemName}"]`).dataset.sectionname
-    // ) {
-    //   window.scrollTo(top:"")
-    // }
-    const aboutLoc = about.offsetTop;
-    // window.scrollTo({ top: `${aboutLoc - headerH}`, behavior: "smooth" });
   }
 });
-// function getPosition(el) {
-//   let yPos = 0;
-//   let yScroll = el.offsetTop;
-// }
 
-// getPosition(about);
+// Experience에서 설명 + 사진 부분 slider
 
-// console.dir(document.querySelector('section[data-sectionName="home"]'));
-// console.log(document.querySelector('section[data-sectionName="about"]'));
-// console.log(document.querySelector('section[data-sectionName="work"]'));
-// console.log(document.querySelector('section[data-sectionName="exp"]'));
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const imagesContainer = document.querySelector(
+  ".exp__images-container"
+).children;
+const imageLength = imagesContainer.length;
+
+let index = 0;
+
+prevBtn.addEventListener("click", () => {
+  nextToImage("prev");
+});
+
+nextBtn.addEventListener("click", () => {
+  nextToImage("next");
+});
+
+function nextToImage(whichBtn) {
+  if (whichBtn === "prev") {
+    // 누른게 prev 버튼이라면
+    index--;
+    if (index < 0) {
+      // 맨 처음 이미지라면 맨 뒤 이미지로 복귀
+      index = imageLength - 1;
+    }
+  } else {
+    // 누른게 next 버튼이라면
+    index++;
+    if (index > imageLength - 1) {
+      // 맨 마지막 이미지라면 맨 처음 이미지로 복귀
+      index = 0;
+    }
+  }
+  for (let i = 0; i < imageLength; i++) {
+    imagesContainer[i].classList.add("hide");
+  }
+  imagesContainer[index].classList.remove("hide");
+}
