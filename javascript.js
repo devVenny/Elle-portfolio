@@ -73,6 +73,7 @@ navMenu.forEach((item) => {
 });
 
 // Experience에서 설명 + 사진 부분 slider
+//// Add transition effect
 
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
