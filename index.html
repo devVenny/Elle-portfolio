@@ -11,7 +11,8 @@
     ></script>
     <script defer src="javascript.js"></script>
     <link rel="stylesheet" href="style.css" />
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <script defer src="/components/header.js"></script>
   </head>
   <body>
@@ -35,10 +36,10 @@
         <div class="home--avatar-wrapper">
             <div class="home__avater" ></div>
         </div>
-        <h2 class="home-title--small">Hi, my name is,</h2>
-        <h1 class="home-title--big">HyeongSeop Lee</div></h1>
+        <h2 class="home-title--small">안녕하세요</h2>
+        <h2 class="home-title--big">새로운 도전에 대한 걱정보단 설레임을 갖춘 개발자 이형섭입니다. </div></h1>
         <h3 class="home-title--middle"
-          >A FrontEnd Developer curretly residing in Seoul, Korea.</h3
+          ></h3
         >
       <button class="home__contact-btn">CONTACT ME</button>
     </section>
@@ -46,33 +47,33 @@
     <!-- About -->
 <section id="about" class="section" data-sectionName ="about">
   <div class="about__text">
-     <h2 class="section__title">About me</h2>
+     <h2 class="section__title">ABOUT ME</h2>
+     <div class="divider divider_home"></div>
     <h3 class="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi distinctio in cum sequi, repellat tempora, nisi dolores molestiae ad repellendus nihil veniam ducimus. Iure nisi quaerat quidem molestiae excepturi!</h3>
   </div>
    
-
     <div class="favorites">
         <div class="favorite">
                 <i class="fab fa-html5"></i>
                 <div class="hover-info">
-                    <div class="favorite-things__name">Html & CSS</div>
-                <div class="favorite-things__detail">Html, css, pug</div>
+                    <div class="favorite-things__name">Frontend</div>
+                <div class="favorite-things__detail">Pug, Ejs, SCSS, Vanila JS</div>
                 </div>
         </div>
 
                 <div class="favorite">
                 <i class="fab fa-js-square"></i>
                 <div class="hover-info">
-                    <div class="favorite-things__name">Javascript</div>
-                <div class="favorite-things__detail">Vanila JS, Node.js</div>
+                    <div class="favorite-things__name">Framework</div>
+                <div class="favorite-things__detail">Vue.js, React.js, Node.js</div>
             </div>
         </div>       
         
         <div class="favorite">
                 <i class="fab fa-react"></i>
                 <div class="hover-info">
-                    <div class="favorite-things__name">React</div>
-                <div class="favorite-things__detail">React JS</div>
+                    <div class="favorite-things__name">Version Control</div>
+                <div class="favorite-things__detail">Git, GitHub, Sourcetree</div>
                 </div>
         </div>
 
@@ -81,18 +82,12 @@
 
     <!-- My work -->
 <section id="myWork" class="section" data-sectionName="work">
-    <h2 class="section__title">My Work</h2>
+    <h2 class="section__title">MY WORK</h2>
     <h3>Projects</h3>
+    <div class="divider"></div>
     <div class="work-wrapper">
-        <div class="category-btns">
-            <button class="category-btn active"><span>All<span class="count active">8</span></span></button>
-            <button class="category-btn"><span>Front-end<span class="count">4</span></span></button>
-            <button class="category-btn"><span>Back-end<span class="count">2</span></span></button>
-            <button class="category-btn"><span>Mobile<span class="count">2</span></span></button>
-        </div>
-
         <div class="work-container">
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project1.png" alt="project1"><div class="project__description">Youtube Site</div></a>
+            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project1.png" alt="project1"><div class="project__description">What's the weather there?</div></a>
             <a href="#" target="blank" class="project"><img class="project__img" src="./images/project2.png" alt="project1"><div class="project__description">Responsive Header</div></a>
             <a href="#" target="blank" class="project"><img class="project__img" src="./images/project3.png" alt="project1"><div class="project__description">Mini Project</div></a>
             <a href="#" target="blank" class="project"><img class="project__img" src="./images/project4.png" alt="project1"><div class="project__description">Drag and Drop</div></a>
@@ -105,17 +100,61 @@
     
 </section>
 
+<!-- Archieving -->
+<section id="archiving" class="section">
+    <h2 class="section__title">ARCHIVING</h2>
+    <div class="divider"></div>
+  <div class="archiving-container">
+
+    <div class="items-wrapper">
+      <div class="archiving-wrapper">
+        <div class="archiving_img-wrapper">
+          <img src="./images//github.png" alt="github">
+        </div>
+        <a class="archiving_url" href="https://github.com/devVenny">
+          https://github.com/devVenny
+        </a>
+        <div class="archiving_description">
+          <p><strong class="bold">소스 코드 저장소</strong>입니다.</p>
+          <ul>
+            <li>혼자 연습했던 프로젝트들의 소스 코드</li>
+            <li>버전 관리, 커밋 기록</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="archiving-wrapper">
+        <div class="archiving_img-wrapper">
+          <img class="tistory" src="./images//tistory.png" alt="tistory">
+        </div>
+              <a class="archiving_url" href="https://hs421.tistory.com">
+          https://hs421.tistory.com
+        </a>
+              <div class="archiving_description">
+          <p><strong class="bold">학습 및 지식 공유 목적의 블로그</strong>입니다.</p>
+          <ul>
+            <li>학습한 것을 나의 것으로 만들기 위한 기록</li>
+            <li>웹, 브라우저 관련 지식 정리</li>
+            <li>기록하는 습관을 가지기 위해 시작</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Experience -->
 
 <section id="experience" class="section" data-sectionName="exp">
   <section class="exp__column--left">
-    <h1 class="section__title exp__title">Experience</h1>
+    <h1 class="section__title exp__title">EXPERIENCE</h1>
 
     <div class="section__subtitle exp__description">
       <div class="exp__description--travel">
         <div class="exp__theme">Working Hoiday & Backpacker</div>
         <div class="exp__metainfo">I've lived in Australia for 2 years and traveled around over 12 countries.
-        </br>I just saw very small part of the whole new world but I've experienced a lot and met good people with great energy.
+        </br>I saw very small part of the whole world but I've experienced a lot and met good people with great energy.
         </br>Ever since i came back from the journey, i realize that there are so many ways to live while loving myself.
         </div>
       </div>

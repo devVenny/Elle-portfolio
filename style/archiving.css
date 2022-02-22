@@ -1,0 +1,52 @@
+.items-wrapper {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+
+.archiving-wrapper {
+  background-color: #fff;
+  width: 350px;
+  height: 230px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+}
+
+.archiving-wrapper a {
+  text-decoration: none;
+  color: cornflowerblue;
+  margin-top: 3px;
+}
+
+.archiving_img-wrapper img {
+  width: 150px;
+}
+
+.archiving_img-wrapper .tistory {
+  width: 170px;
+}
+
+.archiving_description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+
+.archiving_description p {
+  margin: 0;
+}
+
+.archiving_description ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.archiving_description ul li {
+  margin: 5px 0px;
+}

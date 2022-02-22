@@ -77,6 +77,8 @@ navMenu.forEach((item) => {
 
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
+const 
+
 const imagesContainer = document.querySelector(
   ".exp__images-container"
 ).children;

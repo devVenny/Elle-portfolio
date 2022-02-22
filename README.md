@@ -1,4 +1,4 @@
-# Clone Elle's portfolio website
+#포트폴리오
 
 ## Contents
 
@@ -29,5 +29,5 @@
 #### Slider
 
 - [] AboutMe 에 image slider
-- [] Experience에서 설명 + 사진 부분 slider
+- [O] Experience에서 설명 + 사진 부분 slider
 - [] experience 사진 hover 시 blur -> 선명 효과
