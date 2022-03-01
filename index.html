@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <script defer src="/components/header.js"></script>
   </head>
   <body>
 
@@ -27,7 +26,7 @@
         <li class="navbar__menu__item" data-itemName="home">Home</li>
         <li class="navbar__menu__item" data-itemName="about">About</li>
         <li class="navbar__menu__item" data-itemName="work">My work</li>
-        <li class="navbar__menu__item" data-itemName="exp">Experience</li>
+        <li class="navbar__menu__item" data-itemName="archive">Archiving</li>
       </ul>
     </header>
 
@@ -36,10 +35,10 @@
         <div class="home--avatar-wrapper">
             <div class="home__avater" ></div>
         </div>
-        <h2 class="home-title--small">안녕하세요</h2>
-        <h2 class="home-title--big">새로운 도전에 대한 걱정보단 설레임을 갖춘 개발자 이형섭입니다. </div></h1>
+        <h2 class="home-title--small">Hi, my name is</h2>
+        <h2 class="home-title--big">HyeongSeop Lee</h1>
         <h3 class="home-title--middle"
-          ></h3
+          >front-end / web-developer</h3
         >
       <button class="home__contact-btn">CONTACT ME</button>
     </section>
@@ -57,7 +56,7 @@
                 <i class="fab fa-html5"></i>
                 <div class="hover-info">
                     <div class="favorite-things__name">Frontend</div>
-                <div class="favorite-things__detail">Pug, Ejs, SCSS, Vanila JS</div>
+                <div class="favorite-things__detail">JavaScript, Pug, Ejs, SCSS,</div>
                 </div>
         </div>
 
@@ -76,7 +75,6 @@
                 <div class="favorite-things__detail">Git, GitHub, Sourcetree</div>
                 </div>
         </div>
-
     </div>
 </section>
 
@@ -87,21 +85,17 @@
     <div class="divider"></div>
     <div class="work-wrapper">
         <div class="work-container">
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project1.png" alt="project1"><div class="project__description">What's the weather there?</div></a>
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project2.png" alt="project1"><div class="project__description">Responsive Header</div></a>
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project3.png" alt="project1"><div class="project__description">Mini Project</div></a>
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project4.png" alt="project1"><div class="project__description">Drag and Drop</div></a>
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project5.png" alt="project1"><div class="project__description">Insurance</div></a>
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project6.png" alt="project1"><div class="project__description">Fresh orange</div></a>
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project7.png" alt="project1"><div class="project__description">Transcription</div></a>
-            <a href="#" target="blank" class="project"><img class="project__img" src="./images/project8.png" alt="project1"><div class="project__description">Presentation</div></a>
+            <a href="https://devvenny.github.io/weather-appweb/" target="blank" class="project"><img class="project__img" src="./images/project1.png" alt="project1"><div class="project__description">What's the weather there?</div></a>
+            <a href="https://devvenny.github.io/netflix_react/" target="blank" class="project"><img class="project__img" src="./images/netflix.png" alt="project1"><div class="project__description">Netflix clone</div></a>
+            <a href="https://devvenny.github.io/momentum/" target="blank" class="project"><img class="project__img" src="./images/project2.png" alt="project1"><div class="project__description">Momentum</div></a>
+            <a href="https://devvenny.github.io/real-estate-app/" target="blank" class="project"><img class="project__img" src="./images/real-estate.png" alt="project1"><div class="project__description">Real-estate</div></a>
         </div>
     </div>
     
 </section>
 
 <!-- Archieving -->
-<section id="archiving" class="section">
+<section id="archiving" class="section" data-sectionName ="archive">
     <h2 class="section__title">ARCHIVING</h2>
     <div class="divider"></div>
   <div class="archiving-container">
@@ -146,7 +140,7 @@
 
 <!-- Experience -->
 
-<section id="experience" class="section" data-sectionName="exp">
+<!-- <section id="experience" class="section" data-sectionName="exp">
   <section class="exp__column--left">
     <h1 class="section__title exp__title">EXPERIENCE</h1>
 
@@ -203,25 +197,25 @@
         </div>  
     </div>      
   </section>
-</section>
+</section> -->
 
 <!-- Contact -->
 
 <section id="contact" class="section">
     <h1 class="section-title" >Get in Touch</h1>
     <p>Although I’m currently looking for new opportunities, always open to reply.</br>Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-    <a href="#" target="blank" class="email-link">Contact
+    <a href="#" class="email-link">Contact
     </a>
   </section>
 
 <!-- Footer -->
 <footer id="footer">
-  <div class="top-button">
+  <div class="top-button hidden">
     <i class="fas fa-angle-double-up"></i>
     <i class="fas fa-angle-double-up"></i>
   </div>
 
-    <a href="#" target="blank" class="reference">
+    <a href="#" class="reference">
       <span>Designed & Built by HyeongSeop Lee</span>
     </a>
     <div class="links">
@@ -230,6 +224,5 @@
     </div>
 </footer>
 
-<!-- Top button -->
 </body>
 </html>

@@ -33,14 +33,13 @@ function handleScroll() {
   } else {
     header.classList.remove(SHRINK_CLASSNAME);
   }
-
-  // if (scrollLocation >= windowHeight) {
-  // } else {
-  //   topButton.classList.add("hidden");
-  // }
+  if (scrollLocation >= windowHeight) {
+    topButton.classList.add("showing");
+  } else {
+    topButton.classList.remove("showing");
+  }
 
   home.style.left = `-${scrollLocation * 0.3}px`;
-  // footer.style.bottom = `${scrollLocation * 0.2}%`;
 }
 
 topButton.addEventListener("click", goToTop);
@@ -50,9 +49,6 @@ function goToTop() {
 }
 
 //// nav바 메뉴 클릭 시 해당 화면으로 이동
-// 각 섹션의 y좌표 구하기
-// 조건문과 section에 설정한 data-set을 이용해 해당 화면의 좌표로 이동(scrollTo)
-
 const navMenu = document.querySelectorAll(".navbar__menu__item");
 
 navMenu.forEach((item) => {
@@ -60,9 +56,6 @@ navMenu.forEach((item) => {
 
   function handleClickItem(e) {
     const itemName = e.target.dataset.itemname; // click 한  아이
-    // const homeTop = document.querySelector(
-    //   'section[data-sectionName="home"]'
-    // ).offsetTop;
 
     const sectionTop = document.querySelector(
       `section[data-sectionName="${itemName}"]`
@@ -75,43 +68,42 @@ navMenu.forEach((item) => {
 // Experience에서 설명 + 사진 부분 slider
 //// Add transition effect
 
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-const 
+// const prevBtn = document.querySelector(".prev");
+// const nextBtn = document.querySelector(".next");
 
-const imagesContainer = document.querySelector(
-  ".exp__images-container"
-).children;
-const imageLength = imagesContainer.length;
+// const imagesContainer = document.querySelector(
+//   ".exp__images-container"
+// ).children;
+// const imageLength = imagesContainer.length;
 
-let index = 0;
+// let index = 0;
 
-prevBtn.addEventListener("click", () => {
-  nextToImage("prev");
-});
+// prevBtn.addEventListener("click", () => {
+//   nextToImage("prev");
+// });
 
-nextBtn.addEventListener("click", () => {
-  nextToImage("next");
-});
+// nextBtn.addEventListener("click", () => {
+//   nextToImage("next");
+// });
 
-function nextToImage(whichBtn) {
-  if (whichBtn === "prev") {
-    // 누른게 prev 버튼이라면
-    index--;
-    if (index < 0) {
-      // 맨 처음 이미지라면 맨 뒤 이미지로 복귀
-      index = imageLength - 1;
-    }
-  } else {
-    // 누른게 next 버튼이라면
-    index++;
-    if (index > imageLength - 1) {
-      // 맨 마지막 이미지라면 맨 처음 이미지로 복귀
-      index = 0;
-    }
-  }
-  for (let i = 0; i < imageLength; i++) {
-    imagesContainer[i].classList.add("hide");
-  }
-  imagesContainer[index].classList.remove("hide");
-}
+// function nextToImage(whichBtn) {
+//   if (whichBtn === "prev") {
+//     // 누른게 prev 버튼이라면
+//     index--;
+//     if (index < 0) {
+//       // 맨 처음 이미지라면 맨 뒤 이미지로 복귀
+//       index = imageLength - 1;
+//     }
+//   } else {
+//     // 누른게 next 버튼이라면
+//     index++;
+//     if (index > imageLength - 1) {
+//       // 맨 마지막 이미지라면 맨 처음 이미지로 복귀
+//       index = 0;
+//     }
+//   }
+//   for (let i = 0; i < imageLength; i++) {
+//     imagesContainer[i].classList.add("hide");
+//   }
+//   imagesContainer[index].classList.remove("hide");
+// }
